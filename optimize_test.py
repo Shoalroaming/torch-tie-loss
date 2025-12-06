@@ -191,4 +191,10 @@ def main():
     return true_phase, results
 
 if __name__ == "__main__":
+
     true_phase, results = main()
+
+'''
+ 从结果可以看出，用优化器求解病态反问题时，一个好的初始猜测可能要比边界条件更好用;
+ 如果这两个都没有，牢AdamW就会坠机。
+'''
